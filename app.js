@@ -59,3 +59,9 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+
+
+//       Token
+
+// eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGQyMGZhZDc1NzYyODEzNzBhMWJjODYiLCJpYXQiOjE2MjQzNzkzNDIsImV4cCI6MTYyNDQxNTM0Mn0.WAJpfnkOA5KQDePzljYLG44zN-U2wPrNOHaqUP3ypdc
