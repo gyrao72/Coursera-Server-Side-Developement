@@ -27,11 +27,10 @@ connect.then((db)=>{
 	console.log('Connected to DB');
 },(err)=>{console.log(err);});
 
+app.use(passport.initialize());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-
-app.use(passport.initialize());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -64,4 +63,3 @@ module.exports = app;
 
 //       Token
 
-// eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGQyMGZhZDc1NzYyODEzNzBhMWJjODYiLCJpYXQiOjE2MjQzNzkzNDIsImV4cCI6MTYyNDQxNTM0Mn0.WAJpfnkOA5KQDePzljYLG44zN-U2wPrNOHaqUP3ypdc
